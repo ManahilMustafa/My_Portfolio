@@ -81,7 +81,7 @@ body{
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url('/images/Untitled\ design.png') no-repeat;
+    background: url('/images/Untitled\ design\ \(1\).png') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -624,8 +624,7 @@ span{
     transition-delay: calc(.3s / var(--i));
     animation: none;
 }
-section:nth-child(odd) .animate.scroll,
-.footer .animate.scroll {
+section:nth-child(odd) .animate.scroll {
     background: var(--secondary-bg-color);
 }
 .education .education-box .animate.scroll {
@@ -635,8 +634,7 @@ section:nth-child(odd) .animate.scroll,
 .about.show-animate .animate.scroll,
 .education.show-animate .animate.scroll,
 .skills.show-animate .animate.scroll,
-.contact.show-animate .animate.scroll,
-.footer.show-animate .animate.scroll {
+.contact.show-animate .animate.scroll {
     transition-delay: calc(.3s / var(--i));
     width: 0;
 }
@@ -668,6 +666,9 @@ section:nth-child(odd) .animate.scroll,
   }
 }
 @media (max-width: 768px){
+    .home {
+        background-image: none;
+    }
     .header {
         background: var(--bg-color);
 
