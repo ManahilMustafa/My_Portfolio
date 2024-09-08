@@ -2,7 +2,7 @@
 
 *{
     font-family: "Montserrat", system-ui;
-    margin: 0;
+    margin: -2px;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
@@ -756,9 +756,20 @@ section:nth-child(odd) .animate.scroll,
         font-size: 1.3rem;
     }
 }
+@media (max-width: 425px) {
+    .home {
+        background-image: none;
+    }
+}
+@media (max-height: 533px){
+    .home-sci a {
+        margin-top: 30%;
+    }
+}
 @media (max-width: 371px) {
     .home {
         justify-content: center;
+        background-image: none;
     }
     .home-content {
         display: flex;
